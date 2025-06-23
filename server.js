@@ -16,7 +16,7 @@ const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
 // Middleware
 app.use(helmet());
 app.use(cors({
-  origin: process.env.ALLOWED_ORIGINS?.split(',') || ['http://localhost:5173', 'https://chat.tezzeract.lt', 'https://lovable-bot-4pxb.vercel.app'],
+  origin: process.env.ALLOWED_ORIGINS?.split(',') || ['http://localhost:5173', 'https://chat.tezzeract.lt', 'https://lovable-bot-4pxb.vercel.app', 'https://tezzeract.lt/'],
   credentials: true
 }));
 app.use(express.json({ limit: '10mb' }));
